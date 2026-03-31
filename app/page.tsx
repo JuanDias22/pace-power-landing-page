@@ -151,6 +151,42 @@ export default function Home() {
 
       </section>
 
+      <section className="bg-black py-20 px-6 text-center">
+
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+          Como funciona
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+          
+          <div>
+            <div className="text-green-500 text-4xl mb-4">01</div>
+            <h3 className="text-xl font-bold mb-3">Avaliação inicial</h3>
+            <p className="text-gray-400">
+              Entendemos seu nível, objetivos e rotina para montar a melhor estratégia.
+            </p>
+          </div>
+
+          <div>
+            <div className="text-green-500 text-4xl mb-4">02</div>
+            <h3 className="text-xl font-bold mb-3">Plano personalizado</h3>
+            <p className="text-gray-400">
+              Você recebe um treino híbrido completo de corrida + musculação.
+            </p>
+          </div>
+
+          <div>
+            <div className="text-green-500 text-4xl mb-4">03</div>
+            <h3 className="text-xl font-bold mb-3">Acompanhamento</h3>
+            <p className="text-gray-400">
+              Ajustes constantes e suporte para garantir sua evolução contínua.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
     </main>
   );
 }
