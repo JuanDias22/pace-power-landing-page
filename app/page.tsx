@@ -11,7 +11,7 @@ export default function Home() {
               alt="Pace & Power"
               width={180}
               height={70}
-              className="object-contain"/>
+              className="object-contain" />
           </div>
 
           <nav className="hidden md:flex gap-6 text-sm text-gray-300">
@@ -32,10 +32,10 @@ export default function Home() {
 
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/bg.jpg')" }}/>
+          style={{ backgroundImage: "url('/bg.jpg')" }} />
 
         <div className="absolute inset-0 bg-black/70" />
-        
+
         <div className="relative z-10">
 
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-wide">
@@ -63,6 +63,89 @@ export default function Home() {
           >
             COMEÇAR AGORA
           </a>
+        </div>
+
+      </section>
+
+      <section className="bg-black py-20 px-6 text-center">
+
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+          Escolha seu plano
+        </h2>
+
+        <div className="group grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+          <div className="border border-gray-800 p-6 rounded-xl 
+    transition duration-300 hover:scale-105 hover:border-green-500 hover:shadow-[0_0_20px_#22c55e]">
+
+            <h3 className="text-xl font-bold mb-4">Básico</h3>
+            <p className="text-gray-400 mb-6">Para iniciantes</p>
+            <p className="text-3xl font-bold mb-6">R$ 79</p>
+
+            <ul className="text-gray-300 mb-6 space-y-2">
+              <li>✔ Treino de corrida</li>
+              <li>✔ Acompanhamento básico</li>
+            </ul>
+
+            <a
+              href="https://wa.me/5541999999999?text=Quero%20o%20plano%20Básico"
+              target="_blank"
+              className="block bg-green-500 text-black py-3 rounded-lg font-semibold"
+            >
+              Escolher
+            </a>
+          </div>
+
+          <div className="border-2 border-green-500 p-6 rounded-xl scale-105 shadow-[0_0_20px_#22c55e]
+  transition duration-300
+  group-hover:scale-100 
+  group-hover:shadow-none 
+  group-hover:border-gray-800
+  hover:scale-110 
+  hover:shadow-[0_0_30px_#22c55e] 
+  hover:border-green-500">
+
+            <h3 className="text-xl font-bold mb-4">Intermediário</h3>
+            <p className="text-gray-400 mb-6">Mais escolhido</p>
+            <p className="text-3xl font-bold mb-6">R$ 119</p>
+
+            <ul className="text-gray-300 mb-6 space-y-2">
+              <li>✔ Corrida + musculação</li>
+              <li>✔ Ajustes semanais</li>
+              <li>✔ Suporte direto</li>
+            </ul>
+
+            <a
+              href="https://wa.me/5541999999999?text=Quero%20o%20plano%20Intermediário"
+              target="_blank"
+              className="block bg-green-500 text-black py-3 rounded-lg font-semibold 
+        shadow-[0_0_15px_#22c55e]"
+            >
+              Escolher
+            </a>
+          </div>
+
+          <div className="border border-gray-800 p-6 rounded-xl 
+    transition duration-300 hover:scale-105 hover:border-green-500 hover:shadow-[0_0_20px_#22c55e]">
+
+            <h3 className="text-xl font-bold mb-4">Premium</h3>
+            <p className="text-gray-400 mb-6">Alta performance</p>
+            <p className="text-3xl font-bold mb-6">R$ 149</p>
+
+            <ul className="text-gray-300 mb-6 space-y-2">
+              <li>✔ Treino completo</li>
+              <li>✔ Consultoria individual</li>
+              <li>✔ Suporte diário</li>
+            </ul>
+
+            <a
+              href="https://wa.me/5541999999999?text=Quero%20o%20plano%20Premium"
+              target="_blank"
+              className="block bg-green-500 text-black py-3 rounded-lg font-semibold"
+            >
+              Escolher
+            </a>
+          </div>
 
         </div>
 
