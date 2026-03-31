@@ -158,7 +158,7 @@ export default function Home() {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-          
+
           <div>
             <div className="text-green-500 text-4xl mb-4">01</div>
             <h3 className="text-xl font-bold mb-3">Avaliação inicial</h3>
@@ -187,6 +187,60 @@ export default function Home() {
 
       </section>
 
+      <section className="bg-black py-20 px-6 text-center">
+
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+          Resultados reais
+        </h2>
+
+        <div className="group grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+          <div className="
+  border border-gray-800 p-6 rounded-xl
+  transition duration-300
+  hover:scale-105 
+  hover:border-green-500 
+  hover:shadow-[0_0_20px_#22c55e]">
+            <p className="text-gray-300 mb-4">
+              “Em 2 meses já senti muita diferença na resistência e no físico.”
+            </p>
+            <h3 className="font-bold">Carlos Silva</h3>
+            <p className="text-green-500 text-sm">-5kg</p>
+          </div>
+
+          <div className="
+  border-2 border-green-500 p-6 rounded-xl 
+  scale-105 shadow-[0_0_20px_#22c55e]
+  transition duration-300
+  group-hover:scale-100 
+  group-hover:shadow-none 
+  group-hover:border-gray-800
+  hover:scale-110 
+  hover:shadow-[0_0_30px_#22c55e] 
+  hover:border-green-500">
+            <p className="text-gray-300 mb-4">
+              “Nunca gostei de correr, hoje virou parte da minha rotina.”
+            </p>
+            <h3 className="font-bold">Juliana Rocha</h3>
+            <p className="text-green-500 text-sm">+ performance</p>
+          </div>
+
+          <div className="
+  border border-gray-800 p-6 rounded-xl
+  transition duration-300
+  hover:scale-105 
+  hover:border-green-500 
+  hover:shadow-[0_0_20px_#22c55e]">
+            <p className="text-gray-300 mb-4">
+              “Treino completo, acompanhamento top e resultado de verdade.”
+            </p>
+            <h3 className="font-bold">Marcos Lima</h3>
+            <p className="text-green-500 text-sm">+ força</p>
+          </div>
+
+        </div>
+
+      </section>
     </main>
   );
 }
