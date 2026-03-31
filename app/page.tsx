@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -237,10 +238,37 @@ export default function Home() {
             <h3 className="font-bold">Marcos Lima</h3>
             <p className="text-green-500 text-sm">+ força</p>
           </div>
-
         </div>
-
       </section>
+
+      <section className="bg-black py-24 px-6 text-center">
+        <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
+          Pronto para evoluir de verdade?
+        </h2>
+        <p className="text-gray-400 mb-10 max-w-xl mx-auto">
+          Comece agora na Pace & Power e tenha um treino estruturado para transformar
+          seu corpo e sua performance.
+        </p>
+
+        <a
+          href="https://wa.me/5541999999999?text=Quero%20começar%20na%20Pace%20%26%20Power"
+          target="_blank"
+          className="inline-block bg-green-500 text-black px-10 py-5 rounded-xl font-bold 
+    text-lg hover:scale-110 transition duration-300
+    shadow-[0_0_20px_#22c55e] hover:shadow-[0_0_40px_#22c55e]"
+        >
+          COMEÇAR AGORA
+        </a>
+      </section>
+      
+      <a
+        href="https://wa.me/5541999999999?text=Quero%20começar%20na%20Pace%20%26%20Power"
+        target="_blank"
+        className="fixed bottom-6 right-6 bg-green-500 text-black p-4 rounded-full 
+  shadow-[0_0_15px_#22c55e] hover:scale-110 transition z-50 flex items-center justify-center"
+      >
+        <FaWhatsapp size={24} />
+      </a>
     </main>
   );
 }
