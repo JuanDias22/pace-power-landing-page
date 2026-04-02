@@ -56,7 +56,7 @@ export default function Home() {
           </p>
 
           <a
-            href="https://wa.me/5541999999999?text=Quero%20começar%20na%20Pace%20%26%20Power"
+            href="https://wa.me/5541997197441?text=Quero%20começar%20na%20Pace%20%26%20Power"
             target="_blank"
             className="bg-green-500 text-black px-8 py-4 rounded-xl font-bold 
   hover:scale-110 transition duration-300
@@ -89,7 +89,7 @@ export default function Home() {
             </ul>
 
             <a
-              href="https://wa.me/5541999999999?text=Quero%20o%20plano%20Básico"
+              href="https://wa.me/5541997197441?text=Quero%20o%20plano%20Básico"
               target="_blank"
               className="block bg-green-500 text-black py-3 rounded-lg font-semibold"
             >
