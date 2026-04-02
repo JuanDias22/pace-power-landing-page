@@ -117,7 +117,7 @@ export default function Home() {
             </ul>
 
             <a
-              href="https://wa.me/5541999999999?text=Quero%20o%20plano%20Intermediário"
+              href="https://wa.me/5541997197441?text=Quero%20o%20plano%20Intermediário"
               target="_blank"
               className="block bg-green-500 text-black py-3 rounded-lg font-semibold 
         shadow-[0_0_15px_#22c55e]"
@@ -140,7 +140,7 @@ export default function Home() {
             </ul>
 
             <a
-              href="https://wa.me/5541999999999?text=Quero%20o%20plano%20Premium"
+              href="https://wa.me/5541997197441?text=Quero%20o%20plano%20Premium"
               target="_blank"
               className="block bg-green-500 text-black py-3 rounded-lg font-semibold"
             >
@@ -251,7 +251,7 @@ export default function Home() {
         </p>
 
         <a
-          href="https://wa.me/5541999999999?text=Quero%20começar%20na%20Pace%20%26%20Power"
+          href="https://wa.me/5541997197441?text=Quero%20começar%20na%20Pace%20%26%20Power"
           target="_blank"
           className="inline-block bg-green-500 text-black px-10 py-5 rounded-xl font-bold 
     text-lg hover:scale-110 transition duration-300
@@ -262,7 +262,7 @@ export default function Home() {
       </section>
       
       <a
-        href="https://wa.me/5541999999999?text=Quero%20começar%20na%20Pace%20%26%20Power"
+        href="https://wa.me/5541997197441?text=Quero%20começar%20na%20Pace%20%26%20Power"
         target="_blank"
         className="fixed bottom-6 right-6 bg-green-500 text-black p-4 rounded-full 
   shadow-[0_0_15px_#22c55e] hover:scale-110 transition z-50 flex items-center justify-center"
