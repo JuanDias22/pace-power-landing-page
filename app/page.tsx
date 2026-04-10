@@ -130,18 +130,18 @@ export default function Home() {
       <Reveal>
         <section id="planos" className="bg-black py-20 px-6 text-center">
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">
-          Escolha seu plano
-        </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">
+            Escolha seu plano
+          </h2>
 
-        <div className="group grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="group grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-          <div className="border border-gray-800 p-6 rounded-xl 
+            <div className="border border-gray-800 p-6 rounded-xl 
     transition duration-300 hover:scale-105 hover:border-green-500 hover:shadow-[0_0_20px_#22c55e]">
 
-            <h3 className="text-xl font-bold mb-4">Básico</h3>
-            <p className="text-gray-400 mb-6">Para iniciantes</p>
-            <p className="text-3xl font-bold mb-6">R$ 79</p>
+              <h3 className="text-xl font-bold mb-4">Básico</h3>
+              <p className="text-gray-400 mb-6">Para iniciantes</p>
+              <p className="text-3xl font-bold mb-6">R$ 79</p>
 
               <p className="text-green-500 text-sm mb-4">
                 
@@ -154,21 +154,21 @@ export default function Home() {
                 <FaBarcode title="Boleto" />
               </div>
 
-            <ul className="text-gray-300 mb-6 space-y-2">
-              <li>✔ Treino de corrida</li>
-              <li>✔ Acompanhamento básico</li>
-            </ul>
+              <ul className="text-gray-300 mb-6 space-y-2">
+                <li>✔ Treino de corrida</li>
+                <li>✔ Acompanhamento básico</li>
+              </ul>
 
-            <a
+              <a
                 href="/cadastro?plano=Básico"
-              target="_blank"
-              className="block bg-green-500 text-black py-3 rounded-lg font-semibold"
-            >
-              Escolher
-            </a>
-          </div>
+                target="_blank"
+                className="block bg-green-500 text-black py-3 rounded-lg font-semibold"
+              >
+                Escolher
+              </a>
+            </div>
 
-          <div className="border-2 border-green-500 p-6 rounded-xl scale-105 shadow-[0_0_20px_#22c55e]
+            <div className="border-2 border-green-500 p-6 rounded-xl scale-105 shadow-[0_0_20px_#22c55e]
   transition duration-300
   group-hover:scale-100 
   group-hover:shadow-none 
@@ -177,9 +177,9 @@ export default function Home() {
   hover:shadow-[0_0_30px_#22c55e] 
   hover:border-green-500">
 
-            <h3 className="text-xl font-bold mb-4">Intermediário</h3>
-            <p className="text-gray-400 mb-6">Mais escolhido</p>
-            <p className="text-3xl font-bold mb-6">R$ 119</p>
+              <h3 className="text-xl font-bold mb-4">Intermediário</h3>
+              <p className="text-gray-400 mb-6">Mais escolhido</p>
+              <p className="text-3xl font-bold mb-6">R$ 119</p>
 
               <p className="text-green-500 text-sm mb-4">
                 
@@ -192,28 +192,28 @@ export default function Home() {
                 <FaBarcode title="Boleto" />
               </div>
 
-            <ul className="text-gray-300 mb-6 space-y-2">
-              <li>✔ Corrida + musculação</li>
-              <li>✔ Ajustes semanais</li>
-              <li>✔ Suporte direto</li>
-            </ul>
+              <ul className="text-gray-300 mb-6 space-y-2">
+                <li>✔ Corrida + musculação</li>
+                <li>✔ Ajustes semanais</li>
+                <li>✔ Suporte direto</li>
+              </ul>
 
-            <a
+              <a
                 href="/cadastro?plano=Intermediario"
-              target="_blank"
-              className="block bg-green-500 text-black py-3 rounded-lg font-semibold 
+                target="_blank"
+                className="block bg-green-500 text-black py-3 rounded-lg font-semibold 
         shadow-[0_0_15px_#22c55e]"
-            >
-              Escolher
-            </a>
-          </div>
+              >
+                Escolher
+              </a>
+            </div>
 
-          <div className="border border-gray-800 p-6 rounded-xl 
+            <div className="border border-gray-800 p-6 rounded-xl 
     transition duration-300 hover:scale-105 hover:border-green-500 hover:shadow-[0_0_20px_#22c55e]">
 
-            <h3 className="text-xl font-bold mb-4">Premium</h3>
-            <p className="text-gray-400 mb-6">Alta performance</p>
-            <p className="text-3xl font-bold mb-6">R$ 149</p>
+              <h3 className="text-xl font-bold mb-4">Premium</h3>
+              <p className="text-gray-400 mb-6">Alta performance</p>
+              <p className="text-3xl font-bold mb-6">R$ 149</p>
 
               <p className="text-green-500 text-sm mb-4">
                 
@@ -227,88 +227,88 @@ export default function Home() {
               </div>
               
 
-            <ul className="text-gray-300 mb-6 space-y-2">
-              <li>✔ Treino completo</li>
-              <li>✔ Consultoria individual</li>
-              <li>✔ Suporte diário</li>
-            </ul>
+              <ul className="text-gray-300 mb-6 space-y-2">
+                <li>✔ Treino completo</li>
+                <li>✔ Consultoria individual</li>
+                <li>✔ Suporte diário</li>
+              </ul>
 
-            <a
+              <a
                 href="/cadastro?plano=Premium"
-              target="_blank"
-              className="block bg-green-500 text-black py-3 rounded-lg font-semibold"
-            >
-              Escolher
-            </a>
+                target="_blank"
+                className="block bg-green-500 text-black py-3 rounded-lg font-semibold"
+              >
+                Escolher
+              </a>
+            </div>
+
           </div>
 
-        </div>
-
-      </section>
+        </section>
 
       </Reveal>
 
       <Reveal>
         <section id="metodo" className="bg-black py-20 px-6 text-center">
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">
-          Como funciona
-        </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">
+            Como funciona
+          </h2>
 
-        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
 
-          <div>
-            <div className="text-green-500 text-4xl mb-4">01</div>
-            <h3 className="text-xl font-bold mb-3">Avaliação inicial</h3>
-            <p className="text-gray-400">
-              Entendemos seu nível, objetivos e rotina para montar a melhor estratégia.
-            </p>
+            <div>
+              <div className="text-green-500 text-4xl mb-4">01</div>
+              <h3 className="text-xl font-bold mb-3">Avaliação inicial</h3>
+              <p className="text-gray-400">
+                Entendemos seu nível, objetivos e rotina para montar a melhor estratégia.
+              </p>
+            </div>
+
+            <div>
+              <div className="text-green-500 text-4xl mb-4">02</div>
+              <h3 className="text-xl font-bold mb-3">Plano personalizado</h3>
+              <p className="text-gray-400">
+                Você recebe um treino híbrido completo de corrida + musculação.
+              </p>
+            </div>
+
+            <div>
+              <div className="text-green-500 text-4xl mb-4">03</div>
+              <h3 className="text-xl font-bold mb-3">Acompanhamento</h3>
+              <p className="text-gray-400">
+                Ajustes constantes e suporte para garantir sua evolução contínua.
+              </p>
+            </div>
+
           </div>
 
-          <div>
-            <div className="text-green-500 text-4xl mb-4">02</div>
-            <h3 className="text-xl font-bold mb-3">Plano personalizado</h3>
-            <p className="text-gray-400">
-              Você recebe um treino híbrido completo de corrida + musculação.
-            </p>
-          </div>
-
-          <div>
-            <div className="text-green-500 text-4xl mb-4">03</div>
-            <h3 className="text-xl font-bold mb-3">Acompanhamento</h3>
-            <p className="text-gray-400">
-              Ajustes constantes e suporte para garantir sua evolução contínua.
-            </p>
-          </div>
-
-        </div>
-
-      </section>
+        </section>
 
       </Reveal>
       <Reveal>
-      <section className="bg-black py-20 px-6 text-center">
+        <section className="bg-black py-20 px-6 text-center">
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">
-          Resultados reais
-        </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">
+            Resultados reais
+          </h2>
 
-        <div className="group grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="group grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-          <div className="
+            <div className="
   border border-gray-800 p-6 rounded-xl
   transition duration-300
   hover:scale-105 
   hover:border-green-500 
   hover:shadow-[0_0_20px_#22c55e]">
-            <p className="text-gray-300 mb-4">
-              “Em 2 meses já senti muita diferença na resistência e no físico.”
-            </p>
-            <h3 className="font-bold">Carlos Silva</h3>
-            <p className="text-green-500 text-sm">-5kg</p>
-          </div>
+              <p className="text-gray-300 mb-4">
+                “Em 2 meses já senti muita diferença na resistência e no físico.”
+              </p>
+              <h3 className="font-bold">Carlos Silva</h3>
+              <p className="text-green-500 text-sm">-5kg</p>
+            </div>
 
-          <div className="
+            <div className="
   border-2 border-green-500 p-6 rounded-xl 
   scale-105 shadow-[0_0_20px_#22c55e]
   transition duration-300
@@ -318,27 +318,27 @@ export default function Home() {
   hover:scale-110 
   hover:shadow-[0_0_30px_#22c55e] 
   hover:border-green-500">
-            <p className="text-gray-300 mb-4">
-              “Nunca gostei de correr, hoje virou parte da minha rotina.”
-            </p>
-            <h3 className="font-bold">Juliana Rocha</h3>
-            <p className="text-green-500 text-sm">+ performance</p>
-          </div>
+              <p className="text-gray-300 mb-4">
+                “Nunca gostei de correr, hoje virou parte da minha rotina.”
+              </p>
+              <h3 className="font-bold">Juliana Rocha</h3>
+              <p className="text-green-500 text-sm">+ performance</p>
+            </div>
 
-          <div className="
+            <div className="
   border border-gray-800 p-6 rounded-xl
   transition duration-300
   hover:scale-105 
   hover:border-green-500 
   hover:shadow-[0_0_20px_#22c55e]">
-            <p className="text-gray-300 mb-4">
-              “Treino completo, acompanhamento top e resultado de verdade.”
-            </p>
-            <h3 className="font-bold">Marcos Lima</h3>
-            <p className="text-green-500 text-sm">+ força</p>
+              <p className="text-gray-300 mb-4">
+                “Treino completo, acompanhamento top e resultado de verdade.”
+              </p>
+              <h3 className="font-bold">Marcos Lima</h3>
+              <p className="text-green-500 text-sm">+ força</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       </Reveal>
 
@@ -357,12 +357,12 @@ export default function Home() {
           className="bg-green-500 text-black px-10 py-5 rounded-xl font-bold 
           hover:scale-110 transition shadow-[0_0_20px_#22c55e]"
         >
-          COMEÇAR AGORA
+          Quero meu plano personalizado
         </a>
       </section>
-      
+
       <a
-        href="https://wa.me/5541997197441?text=Quero%20começar%20na%20Pace%20%26%20Power"
+        href="https://wa.me/5541997197441?text=Gostaria%20de%20saber%20mais%20sobre%20a%20Pace%20%26%20Power"
         target="_blank"
         className="fixed bottom-6 right-6 bg-green-500 text-black p-4 rounded-full 
   shadow-[0_0_15px_#22c55e] hover:scale-110 transition z-50 flex items-center justify-center"
