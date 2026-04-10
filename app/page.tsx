@@ -1,5 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
+import Reveal from "@/components/Reveal";
+import { useEffect, useState } from "react";
+import { FaCreditCard } from "react-icons/fa";
+import { SiPix } from "react-icons/si";
+import { FaBarcode } from "react-icons/fa";
+
 
 export default function Home() {
   return (
