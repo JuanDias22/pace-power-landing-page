@@ -15,21 +15,36 @@ export default function Home() {
               className="object-contain" />
           </div>
 
-          <nav className="hidden md:flex gap-6 text-sm text-gray-300">
-            <a href="#" className="hover:text-white transition">Início</a>
-            <a href="#" className="hover:text-white transition">Método</a>
-            <a href="#" className="hover:text-white transition">Planos</a>
+          <nav className="hidden md:flex gap-6 text-base font-medium">
+            <a href="#inicio" className={active === "inicio" ? "text-green-500" : "text-gray-300"}>
+              Início
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#planos" className={active === "planos" ? "text-green-500" : "text-gray-300"}>
+              Planos
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#metodo" className={active === "metodo" ? "text-green-500" : "text-gray-300"}>
+              Método
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
           </nav>
 
-          <button className="bg-green-500 text-black px-4 py-2 rounded-lg font-semibold 
-          hover:scale-105 transition shadow-[0_0_10px_#22c55e]">
+
+          <a
+            href="/cadastro"
+            className="bg-green-500 text-black px-5 py-2 rounded-lg font-semibold 
+            transition-all duration-300
+            hover:scale-105 hover:shadow-[0_0_20px_#22c55e]
+            active:scale-95"
+          >
             Começar
-          </button>
+          </a>
 
         </div>
       </header>
 
-      <section className="relative h-screen flex items-center justify-center text-center px-6 pt-24">
+      <section id="inicio" className="relative h-screen flex items-center justify-center text-center px-6 pt-24">
 
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -56,7 +71,7 @@ export default function Home() {
           </p>
 
           <a
-            href="https://wa.me/5541997197441?text=Quero%20começar%20na%20Pace%20%26%20Power"
+            href="/cadastro"
             target="_blank"
             className="bg-green-500 text-black px-8 py-4 rounded-xl font-bold 
   hover:scale-110 transition duration-300
@@ -68,7 +83,8 @@ export default function Home() {
 
       </section>
 
-      <section className="bg-black py-20 px-6 text-center">
+      <Reveal>
+        <section id="planos" className="bg-black py-20 px-6 text-center">
 
         <h2 className="text-3xl md:text-4xl font-bold mb-12">
           Escolha seu plano
@@ -89,7 +105,7 @@ export default function Home() {
             </ul>
 
             <a
-              href="https://wa.me/5541997197441?text=Quero%20o%20plano%20Básico"
+                href="/cadastro?plano=Básico"
               target="_blank"
               className="block bg-green-500 text-black py-3 rounded-lg font-semibold"
             >
@@ -117,7 +133,7 @@ export default function Home() {
             </ul>
 
             <a
-              href="https://wa.me/5541997197441?text=Quero%20o%20plano%20Intermediário"
+                href="/cadastro?plano=Intermediario"
               target="_blank"
               className="block bg-green-500 text-black py-3 rounded-lg font-semibold 
         shadow-[0_0_15px_#22c55e]"
@@ -140,7 +156,7 @@ export default function Home() {
             </ul>
 
             <a
-              href="https://wa.me/5541997197441?text=Quero%20o%20plano%20Premium"
+                href="/cadastro?plano=Premium"
               target="_blank"
               className="block bg-green-500 text-black py-3 rounded-lg font-semibold"
             >
@@ -152,7 +168,10 @@ export default function Home() {
 
       </section>
 
-      <section className="bg-black py-20 px-6 text-center">
+      </Reveal>
+
+      <Reveal>
+        <section id="metodo" className="bg-black py-20 px-6 text-center">
 
         <h2 className="text-3xl md:text-4xl font-bold mb-12">
           Como funciona
@@ -251,11 +270,10 @@ export default function Home() {
         </p>
 
         <a
-          href="https://wa.me/5541997197441?text=Quero%20começar%20na%20Pace%20%26%20Power"
+          href="/cadastro"
           target="_blank"
-          className="inline-block bg-green-500 text-black px-10 py-5 rounded-xl font-bold 
-    text-lg hover:scale-110 transition duration-300
-    shadow-[0_0_20px_#22c55e] hover:shadow-[0_0_40px_#22c55e]"
+          className="bg-green-500 text-black px-10 py-5 rounded-xl font-bold 
+          hover:scale-110 transition shadow-[0_0_20px_#22c55e]"
         >
           COMEÇAR AGORA
         </a>
