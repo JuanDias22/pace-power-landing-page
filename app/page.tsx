@@ -160,7 +160,7 @@ export default function Home() {
               </ul>
 
               <a
-                href="/cadastro?plano=Básico"
+                href="/cadastro?plano=Basico"
                 target="_blank"
                 className="block bg-green-500 text-black py-3 rounded-lg font-semibold"
               >
