@@ -10,16 +10,52 @@ import { FaBarcode } from "react-icons/fa";
 
 
 export default function Home() {
+  const [active, setActive] = useState("inicio");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <main className="bg-black text-white min-h-screen">
-      <header className="w-full fixed top-0 left-0 bg-black/80 backdrop-blur-md z-50">
-        <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <header className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${scrolled
+          ? "bg-black/80 backdrop-blur-lg py-2 shadow-[0_5px_20px_rgba(0,0,0,0.5)]"
+          : "bg-transparent py-3"
+        }`}>
+        <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-2">
+
           <div className="drop-shadow-[0_0_6px_rgba(255,255,255,0.2)]">
             <Image
               src="/logop.png"
               alt="Pace & Power"
-              width={180}
-              height={70}
+              width={140}
+              height={50}
               className="object-contain" />
           </div>
 
@@ -215,6 +251,8 @@ export default function Home() {
 
       </section>
 
+      </Reveal>
+      <Reveal>
       <section className="bg-black py-20 px-6 text-center">
 
         <h2 className="text-3xl md:text-4xl font-bold mb-12">
@@ -267,6 +305,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      </Reveal>
 
       <section className="bg-black py-24 px-6 text-center">
         <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
