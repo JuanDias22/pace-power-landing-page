@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import LeadForm from "@/components/LeadForm";
 import Image from "next/image";
 
@@ -72,7 +73,9 @@ export default function Cadastro() {
             </p>
 
 
-            <LeadForm />
+            <Suspense fallback={<p className="text-center">Carregando...</p>}>
+              <LeadForm />
+            </Suspense>
 
             <p className="text-gray-500 text-xs text-center mt-4">
               Seus dados estão seguros 🔒
