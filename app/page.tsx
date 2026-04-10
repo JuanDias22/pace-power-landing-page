@@ -143,6 +143,17 @@ export default function Home() {
             <p className="text-gray-400 mb-6">Para iniciantes</p>
             <p className="text-3xl font-bold mb-6">R$ 79</p>
 
+              <p className="text-green-500 text-sm mb-4">
+                
+                💲Pagamento facilitado
+              </p>
+
+              <div className="flex justify-center gap-4 text-gray-400 mb-6 text-xl">
+                <SiPix title="Pix" />
+                <FaCreditCard title="Cartão" />
+                <FaBarcode title="Boleto" />
+              </div>
+
             <ul className="text-gray-300 mb-6 space-y-2">
               <li>✔ Treino de corrida</li>
               <li>✔ Acompanhamento básico</li>
@@ -170,6 +181,17 @@ export default function Home() {
             <p className="text-gray-400 mb-6">Mais escolhido</p>
             <p className="text-3xl font-bold mb-6">R$ 119</p>
 
+              <p className="text-green-500 text-sm mb-4">
+                
+                💲Pagamento facilitado
+              </p>
+
+              <div className="flex justify-center gap-4 text-gray-400 mb-6 text-xl">
+                <SiPix title="Pix" />
+                <FaCreditCard title="Cartão" />
+                <FaBarcode title="Boleto" />
+              </div>
+
             <ul className="text-gray-300 mb-6 space-y-2">
               <li>✔ Corrida + musculação</li>
               <li>✔ Ajustes semanais</li>
@@ -192,6 +214,18 @@ export default function Home() {
             <h3 className="text-xl font-bold mb-4">Premium</h3>
             <p className="text-gray-400 mb-6">Alta performance</p>
             <p className="text-3xl font-bold mb-6">R$ 149</p>
+
+              <p className="text-green-500 text-sm mb-4">
+                
+                💲Pagamento facilitado 
+              </p>
+
+              <div className="flex justify-center gap-4 text-gray-400 mb-6 text-xl">
+                <SiPix title="Pix" />
+                <FaCreditCard title="Cartão" />
+                <FaBarcode title="Boleto" />
+              </div>
+              
 
             <ul className="text-gray-300 mb-6 space-y-2">
               <li>✔ Treino completo</li>
