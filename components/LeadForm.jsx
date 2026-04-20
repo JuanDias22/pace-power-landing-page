@@ -26,7 +26,7 @@ export default function LeadForm() {
 }, [searchParams]);
 
   const [loading, setLoading] = useState(false);
-
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
   const handleSubmit = async (e) => {
   e.preventDefault();
 
@@ -34,7 +34,7 @@ export default function LeadForm() {
     setLoading(true);
 
   
-    await fetch("https://localhost:7090/api/leads", {
+    await fetch(`${API_URL}/api/leads`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ export default function LeadForm() {
       body: JSON.stringify(form),
     });
 
-    const response = await fetch("https://localhost:7090/api/payments", {
+    const response = await fetch(`${API_URL}/api/payments`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
