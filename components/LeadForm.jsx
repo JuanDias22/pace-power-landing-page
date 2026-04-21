@@ -29,7 +29,7 @@ export default function LeadForm() {
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
   const handleSubmit = async (e) => {
   e.preventDefault();
-
+ 
   try {
     setLoading(true);
 
@@ -56,13 +56,11 @@ export default function LeadForm() {
 
     const data = await response.json();
 
-
     if (!response.ok) {
-  const text = await response.text();
-  console.error(text);
-  alert("Erro ao criar pagamento");
-  return;
-}
+      console.error(data);
+      alert("Erro ao criar pagamento");
+      return;
+    }
     window.location.href = data.url;
 
   } catch (error) {
