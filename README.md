@@ -1,36 +1,222 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 🌐 Acesse o projeto
 
-## Getting Started
+🔗 https://seu-projeto.vercel.app
 
-First, run the development server:
+## 📸 Preview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+https://github.com/user-attachments/assets/1ca2d57c-f77e-4aa1-ae50-18133c481b60
+
+
+# 🚀 Pace Power
+
+Sistema completo de captura de leads e processamento de pagamentos integrado ao Mercado Pago.
+
+## 📌 Sobre o projeto
+
+O **Pace Power** é uma aplicação fullstack desenvolvida para:
+
+* Captura de leads
+* Escolha de planos (Básico, Intermediário, Premium)
+* Geração de pagamento via Mercado Pago
+* Atualização automática do plano do usuário via webhook
+
+O projeto simula um fluxo real de SaaS com checkout integrado.
+
+---
+
+## 🧱 Arquitetura
+
+Frontend → Backend API → Mercado Pago → Webhook → Banco de Dados
+
+```
+[ Next.js ]
+     ↓
+[ .NET API ]
+     ↓
+[ Mercado Pago ]
+     ↓
+[ Webhook ]
+     ↓
+[ PostgreSQL ]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tecnologias utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Frontend
 
-## Learn More
+* Next.js
+* React
+* TailwindCSS
 
-To learn more about Next.js, take a look at the following resources:
+### Backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* .NET 8
+* ASP.NET Core
+* Dapper
+* PostgreSQL
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Integrações
 
-## Deploy on Vercel
+* Mercado Pago (Checkout + Webhook)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Frontend: Vercel
+* Backend: Render
+
+---
+
+## ⚙️ Funcionalidades
+
+* ✅ Cadastro de leads
+* ✅ Seleção de plano
+* ✅ Geração de pagamento
+* ✅ Redirecionamento para checkout
+* ✅ Webhook para confirmação de pagamento
+* ✅ Atualização automática do plano do usuário
+* ✅ Persistência em banco de dados
+
+---
+
+## 🔗 Endpoints principais
+
+### Criar pagamento
+
+```
+POST /api/payments
+```
+
+**Body:**
+
+```json
+{
+  "plano": "Basico",
+  "nome": "Juan",
+  "email": "juan@email.com"
+}
+```
+
+---
+
+### Webhook do Mercado Pago
+
+```
+POST /api/payments/webhook
+```
+
+Responsável por atualizar o status do pagamento e liberar o plano.
+
+---
+
+## 🗄️ Banco de dados
+
+### Tabela: `pagamentos`
+
+* email
+* plano
+* valor
+* status
+* mercado_pago_id
+* created_at
+* updated_at
+
+---
+
+### Tabela: `usuarios`
+
+* nome
+* email
+* senha_hash
+* plano
+* updated_at
+
+---
+
+## 🔐 Variáveis de ambiente
+
+### Backend (.NET)
+
+```env
+ConnectionStrings__DefaultConnection=
+MercadoPago__AccessToken=
+MercadoPago__WebhookUrl=
+```
+
+---
+
+### Frontend (Next.js)
+
+```env
+NEXT_PUBLIC_API_URL=
+```
+
+---
+
+## ▶️ Como rodar o projeto
+
+### 🔹 Backend
+
+```bash
+dotnet restore
+dotnet run
+```
+
+---
+
+### 🔹 Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 🌐 Deploy
+
+### Backend (Render)
+
+* Configurar variáveis de ambiente
+* Subir repositório
+
+### Frontend (Vercel)
+
+* Adicionar `NEXT_PUBLIC_API_URL`
+* Deploy automático via GitHub
+
+---
+
+## 🔄 Fluxo de pagamento
+
+1. Usuário preenche formulário
+2. Lead é salvo no backend
+3. API cria pagamento no Mercado Pago
+4. Usuário é redirecionado para pagamento
+5. Mercado Pago envia webhook
+6. Backend atualiza status
+7. Plano do usuário é liberado
+
+---
+
+## 🚧 Melhorias futuras
+
+* [ ] Implementar camada de Services
+* [ ] Criar endpoint único de checkout
+* [ ] Adicionar autenticação JWT
+* [ ] Implementar rate limiting
+* [ ] Logs estruturados (Serilog)
+* [ ] Dashboard administrativo
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Juan Dias**
+
+---
+
+## 📄 Licença
+
+Este projeto é para fins de estudo e portfólio.
